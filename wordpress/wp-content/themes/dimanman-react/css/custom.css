@@ -1,0 +1,104 @@
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* link underline */
+a {
+  color: #ffffff;
+  position: relative;
+  text-decoration: none !important; }
+
+a:hover {
+  color: #ffffff; }
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+/* end underline */
+header {
+  padding: 20px;
+  height: 70vh;
+  background-color: #1d1d1d;
+  color: #ffffff; }
+  header h1 {
+    font-size: 5.3vh; }
+  header * {
+    font-size: 2.2vh; }
+  header #header_wrap {
+    padding-top: 15vh;
+    text-align: center; }
+    @media (max-width: 768px) {
+      header #header_wrap {
+        padding-top: 0; } }
+    header #header_wrap #avatar {
+      max-width: 20vh;
+      max-height: 20vh;
+      margin: 0 auto;
+      border: 10px solid #fff;
+      border-radius: 50%; }
+      header #header_wrap #avatar img {
+        vertical-align: middle;
+        width: 100%;
+        height: auto; }
+    header #header_wrap #main_navbar {
+      margin-top: 8vh; }
+
+nav.menu {
+  color: #ffffff; }
+
+.menu_list {
+  text-align: right;
+  padding: 0;
+  margin: 0; }
+  @media (max-width: 768px) {
+    .menu_list {
+      text-align: center; } }
+  .menu_list .menu-item {
+    font-weight: 100;
+    display: inline-block;
+    padding: 10px 20px;
+    list-style: none;
+    text-transform: uppercase; }
+    @media (max-width: 325px) {
+      .menu_list .menu-item {
+        padding: 10px 10px; } }
+
+.page_title {
+  margin-top: 10vh; }
+  .page_title h2:not(.heading_right) {
+    text-align: center; }
+
+.step_item {
+  font-size: 1.75rem; }
+
+footer {
+  background-color: #1d1d1d;
+  color: #9a9a9a; }
+
+.socials {
+  text-align: right;
+  padding-right: 35px; }
+
+.heading_right {
+  text-align: right; }
+
+.sidebar {
+  border: 1px solid black; }
+
+/*# sourceMappingURL=custom.css.map */
